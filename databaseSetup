@@ -1,0 +1,11 @@
+-- drop database if exits
+DROP DATABASE IF EXISTS emp_db;
+
+-- create database name
+CREATE DATABASE emp_db;
+
+-- create user with password
+CREATE USER 'emp_user'@'localhost' IDENTIFIED BY 'emp_password';
+
+-- provide all the permission
+GRANT ALL PRIVILEGES ON emp_db. * TO 'emp_user'@'localhost';
