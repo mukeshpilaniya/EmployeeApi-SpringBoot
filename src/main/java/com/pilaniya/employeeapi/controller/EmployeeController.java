@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping(value = "/employees")
 public class EmployeeController {
 
@@ -38,8 +39,8 @@ public class EmployeeController {
     }
 
     @DeleteMapping(value = "/delete/{id}")
-    public String deleteEmployee(@PathVariable Long id){
+    public List<Employee> deleteEmployee(@PathVariable Long id){
         employeeRepository.deleteById(id);
-        return "deleted";
+        return employeeRepository.findAll();
     }
 }
