@@ -2,4 +2,4 @@
 docker pull mysql:5.7.29
 
 #create EmployeeApi-Mysql container
-docker run --name EmployeeApi-Mysql -e MYSQL_ALLOW_EMPTY_PASSWORD -e MYSQL_DATABASE=emp_db -e MYSQL_USER=emp_user -e MYSQL_PASSWORD=emp_password -d mysql:5.7.29
+docker run --name employeeapi-mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=emp_db -e MYSQL_USER=emp_user -e MYSQL_PASSWORD=emp_password -d mysql:5.7.29
