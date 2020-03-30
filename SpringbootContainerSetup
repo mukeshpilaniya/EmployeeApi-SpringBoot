@@ -1,0 +1,5 @@
+#build EmployeeApi-Springboot docker image
+docker build -t EmployeeApi-Springboot .
+
+#create EmployeeApi-Springboot container from docker image
+docker run -p 8080:8080 --name EmployeeApi-Springboot --link EmployeeApi-Mysql:mysql -d EmployeeApi-Springboot
