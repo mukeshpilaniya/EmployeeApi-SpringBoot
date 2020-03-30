@@ -1,4 +1,4 @@
-#build EmployeeApi-Springboot docker image
+##build EmployeeApi-Springboot docker image
 docker build -t EmployeeApi-Springboot .
 
 #create EmployeeApi-Springboot container from docker image
