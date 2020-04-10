@@ -2,4 +2,4 @@
 docker build -t employeeapi-springboot .
 
 #create EmployeeApi-Springboot container from docker image
-docker run -t -p 8080:8080 --name employeeapi-springboot --link employeeapi-mysql:mysql -d employeeapi-springboot
+docker run -t -p 8082:8080 --name employeeapi-springboot --link employeeapi-mysql:mysql -d employeeapi-springboot
